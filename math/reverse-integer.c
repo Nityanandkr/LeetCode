@@ -3,10 +3,10 @@ int reverse(int x){
     int c=x;
     while (c != 0){
         a=c%10;
-        if (b*10>INT_MAX){
+        if (b>INT_MAX/10){
             return 0;
         }
-        else if (b*10<INT_MIN){
+        else if (b<INT_MIN/10){
             return 0;
         }
         b=b*10+a;
