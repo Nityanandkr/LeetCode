@@ -1,6 +1,6 @@
 bool isPalindrome(int x) {
-    int a,b=0;
-    int c=x;
+    long long a,b=0;
+    long long c=x;
     if (x<0){
         return false;
     }
