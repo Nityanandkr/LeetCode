@@ -1,10 +1,18 @@
-int reverse(int x) {
-    long long rev = 0;
-
-    while (x) {
-        rev = rev * 10 + x % 10;
-        x /= 10;
+int reverse(int x){
+    int a,b=0;
+    int c=x;
+    while (c != 0){
+        a=c%10;
+        if (b>INT_MAX/10){
+            return 0;
+        }
+        else if (b<INT_MIN/10){
+            return 0;
+        }
+        b=b*10+a;
+        c=c/10;
     }
+    return b;
+    
 
-    return (rev > INT_MAX || rev < INT_MIN) ? 0 : (int)rev;
 }
