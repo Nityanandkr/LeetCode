@@ -1,4 +1,4 @@
-int find(int* nums, int numsSize) {
+int findGCD(int* nums, int numsSize) {
     int a=nums[0];
     int b=nums[0];
     int c;
